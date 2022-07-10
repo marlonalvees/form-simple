@@ -44,7 +44,7 @@ function checkInputs() {
   } else {
     setSuccessFor(passwordConfirmation)
   }
-  //Verifica se o formulário está 100% válidado(se todos eles tem a classe succes), não é obrigatório. 
+  //Verifica se o formulário está 100% válidado(se todos eles tem a classe succes)
   const formControls = form.querySelectorAll(".form-control")
   const formIsValid = [... formControls].every(formControl => {
       return (formControl.className === "form-control sucess")
